@@ -1174,8 +1174,13 @@ const switchStructureView = (structure) => {
         return;
     }
 
+    if (structure === 'binaryTree') {
+    renderBinaryTreeView();
+    return;
+    }
+
     renderQueueView();
-};
+  };
 
 // Show Coming Soon Toast
 const showComingSoonToast = () => {
@@ -1926,6 +1931,20 @@ const setupLLEventListeners = () => {
 
     llLearnBtns.forEach(btn => btn.addEventListener('click', handleLLLearnClick));
 };
+ function renderBinaryTreeView() {
+    const container = document.getElementById('binaryTreeContainer');
+
+    if (!container) return;
+
+    container.innerHTML = `
+        <div class="tree-node">10</div>
+        <div>
+            <span class="tree-node">5</span>
+            <span class="tree-node">15</span>
+        </div>
+    `;
+}
+window.renderBinaryTreeView = renderBinaryTreeView;
 
 // -- Bootstrap on DOM ready --
 document.addEventListener('DOMContentLoaded', () => {
