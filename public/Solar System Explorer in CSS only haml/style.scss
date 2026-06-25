@@ -178,11 +178,13 @@ $pluto: #FF8732;
     }
 }
 
-body {
+   body {
     overflow: hidden;
-    background: black;
+    background: var(--bg-color);
+    color: var(--text-color);
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+}
     .logo {
         color: white;
         position: absolute;

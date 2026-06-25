@@ -914,3 +914,17 @@ section {
   --accent: #ef4444;
   --accent-gradient: linear-gradient(135deg, #ef4444, #f97316);
 }
+#back-home {
+    display: block;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+#back-home:hover {
+    background: rgba(255,255,255,0.2);
+}
